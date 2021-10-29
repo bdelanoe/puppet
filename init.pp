@@ -6,7 +6,7 @@
 
 package { 'w3m':
   ensure => installed,
-  name => 'w3m'
+  name   => 'w3m'
 }
 
 #
@@ -17,14 +17,13 @@ package { 'w3m':
 
 file {
   'hello world':
-    path => '/tmp/demo',
-    content => "hello world\n",
-    ensure => present;
-  
+    ensure  => present,
+    path    => '/tmp/demo',
+    content => "hello world\n";
   'hello world 2':
-    path => '/tmp/demo2',
-    content => "hello world 2\n",
-    ensure => present;
+    ensure  => present,
+    path    => '/tmp/demo2',
+    content => "hello world 2\n";
 }
 
 
